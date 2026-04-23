@@ -415,6 +415,10 @@
   min-width: 315px;
 }
 
+.topic:not(.topic-horizontal) .topic_title {
+  width: 315px;
+}
+
 .what_content {
   display: flex;
   flex-direction: row;
