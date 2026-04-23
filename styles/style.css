@@ -385,6 +385,7 @@
   .topic.topic-horizontal {
     display: flex;
     flex-direction: row;
+    gap: 20px;
   }
 
   .topic_text-container {
@@ -393,6 +394,11 @@
  
   .topic_title {
     min-width: 315px;
+  }
+
+  .line {
+    display: flex;
+    flex-direction: row;
   }
 
   .gallery {
