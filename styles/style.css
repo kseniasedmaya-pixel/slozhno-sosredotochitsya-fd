@@ -47,8 +47,8 @@
 }
 
 .page.theme-light .rec-badge {
-    display: none;
-  }
+  display: none;
+}
 
 .decorated-zone::before {
   content: "";
@@ -284,15 +284,21 @@
   }
 
   .topic_text-container {
-    gap: 20px
+    gap: 10px
   }
 
   .topic_title {
     min-width: 236px;
   }
 
-   .topic:not(.topic-horizontal) .topic_title {
+  .topic:not(.topic-horizontal) .topic_title {
     width: 236px;
+  }
+
+  .line{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .gallery {
@@ -333,7 +339,7 @@
   }
 }
 
-@media (width >= 1024px) {
+@media (min-width: 1024px) {
 
   .header {
     max-height: 768px;
@@ -356,12 +362,12 @@
   }
 
   .header__theme-menu {
-  justify-self: center;
+    justify-self: center;
   }
 
   .header__theme-menu-list {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
   }
 
   .cover_title {
@@ -396,9 +402,10 @@
     min-width: 315px;
   }
 
-  .line {
+  .bigscreen {
     display: flex;
     flex-direction: row;
+    gap: 20px;
   }
 
   .gallery {
@@ -433,9 +440,9 @@
   }
 
   .footer {
-  min-height: 768px;
-  margin-top: 60px;
-  padding: 20px;
+    min-height: 768px;
+    margin-top: 60px;
+    padding: 20px;
   }
 
 }
