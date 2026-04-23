@@ -35,3 +35,7 @@
   --button-color: #353430;
   }
 }
+
+.rec-badge {
+  display: none;
+}

@@ -46,10 +46,6 @@
   box-shadow: 0px 0px 4px 2px var(--accent-color, #FF0070);
 }
 
-.page.theme-light .rec-badge {
-  display: none;
-}
-
 .decorated-zone::before {
   content: "";
   position: absolute;
