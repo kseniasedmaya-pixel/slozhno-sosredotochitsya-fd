@@ -170,16 +170,28 @@
   gap: 10px;
 }
 
-.topic_text-container-extra {
+.title-decor-regular {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
+.why_content {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.title-decor-regular {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23.4px;
+.what_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.how_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .topic_text {
@@ -240,209 +252,215 @@
   text-align: center;
 }
 
+
 @media (768px <= width < 1024px) {
 
-  .header {
-    max-height: 1024px;
-    padding: 192px 20px 183px 0px;
-  }
+.header {
+  max-height: 1024px;
+  padding: 192px 20px 183px 0px;
+}
 
-  .rec-badge {
-    top: 20px;
-    right: 29px;
-  }
+.rec-badge {
+  top: 20px;
+  right: 29px;
+}
 
-  .decorated-zone::before {
-    top: 20px;
-   right: 20px;
-  }
+.decorated-zone::before {
+  top: 20px;
+  right: 20px;
+}
 
-  .decorated-zone::after {
-    bottom: 20px;
-    left: 20px;
-  }
+.decorated-zone::after {
+  bottom: 20px;
+  left: 20px;
+}
 
-  .cover_title {
-    max-height: 99px;
-  }
+.cover_title {
+  max-height: 99px;
+}
 
-  .cover_description {
-    justify-self: end;
-    max-width: 364px;
-  }
+.cover_description {
+  justify-self: end;
+  max-width: 364px;
+}
 
-  .content {
-    gap: 80px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    padding: 0px 20px;
-  }
+.content {
+  gap: 80px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 0px 20px;
+}
 
-  .topic.topic-horizontal {
-    display: flex;
-    flex-direction: row;
-  }
+.topic.topic-horizontal {
+  display: flex;
+  flex-direction: row;
+}
 
-  .topic_text-container {
-    gap: 10px
-  }
+.topic_text-container {
+  gap: 10px
+}
 
-  .topic_title {
-    min-width: 236px;
-  }
+.topic_title {
+  min-width: 236px;
+}
 
-  .topic:not(.topic-horizontal) .topic_title {
-    width: 236px;
-  }
+.topic:not(.topic-horizontal) .topic_title {
+  width: 236px;
+}
 
-  .line{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+.gallery {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 192px 230px 318px;
+  gap: 20px;
+}
 
-  .gallery {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 192px 230px 318px;
-    gap: 20px;
-  }
+.sunset_image {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
 
-  .sunset_image {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-  }
+.ice-cream_image {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
 
-  .ice-cream_image {
-    grid-column: 3 / 4;
-    grid-row: 1 / 3;
-  }
+.tape_image {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
 
-  .tape_image {
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
-  }
+.books_image {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
 
-  .books_image {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-  }
+.street_image {
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+}
 
-  .street_image {
-    grid-column: 2 / 4;
-    grid-row: 3 / 4;
-  }
-
-  .footer {
+.footer {
   min-height: 1024px;
   margin-top: 60px;
   padding: 20px;
-  }
 }
 
-@media (min-width: 1024px) {
+.footer_title {
+  font-size: 120px;
+  line-height: 0.83;
+}
+}
 
-  .header {
-    max-height: 768px;
-    padding: 20px 20px 134px 0px;
-  }
 
-  .rec-badge {
-    top: 20px;
-    right: 29px;
-  }
+@media (width >= 1024px) {
 
-  .decorated-zone::before {
-    top: 20px;
-   right: 20px;
-  }
+.header {
+  max-height: 768px;
+  padding: 20px 20px 134px 0px;
+}
 
-  .decorated-zone::after {
-    bottom: 20px;
-    left: 20px;
-  }
+.rec-badge {
+  top: 20px;
+  right: 29px;
+}
 
-  .header__theme-menu {
-    justify-self: center;
-  }
+.decorated-zone::before {
+  top: 20px;
+  right: 20px;
+}
 
-  .header__theme-menu-list {
-    display: flex;
-    flex-direction: row;
-  }
+.decorated-zone::after {
+  bottom: 20px;
+  left: 20px;
+}
 
-  .cover_title {
-    max-height: 130px;
-    margin-top: 273px;
-    margin-bottom: 114px;
-  }
+.header__theme-menu {
+  justify-self: center;
+}
 
-  .cover_description {
-    justify-self: end;
-    max-width: 491px;
-  }
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: row;
+}
 
-  .content {
-    gap: 80px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    padding: 0px 20px;
-  }
+.cover_title {
+  max-height: 130px;
+  margin-top: 273px;
+  margin-bottom: 114px;
+}
 
-  .topic.topic-horizontal {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
+.cover_description {
+  justify-self: end;
+  max-width: 491px;
+}
 
-  .topic_text-container {
-    gap: 20px;
-  }
+.content {
+  gap: 80px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 0px 20px;
+}
+
+.topic.topic-horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.topic_text-container {
+  gap: 20px;
+}
  
-  .topic_title {
-    min-width: 315px;
-  }
+.topic_title {
+  min-width: 315px;
+}
 
-  .bigscreen {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
+.what_content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
 
-  .gallery {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 260px 315px 433px;
-    gap: 20px;
-  }
+.gallery {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 260px 315px 433px;
+  gap: 20px;
+}
 
-  .sunset_image {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-  }
+.sunset_image {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
 
-  .ice-cream_image {
-    grid-column: 3 / 4;
-    grid-row: 1 / 3;
-  }
+.ice-cream_image {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
 
-  .tape_image {
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
-  }
+.tape_image {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
 
-  .books_image {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-  }
+.books_image {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
 
-  .street_image {
-    grid-column: 2 / 4;
-    grid-row: 3 / 4;
-  }
+.street_image {
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+}
 
-  .footer {
-    min-height: 768px;
-    margin-top: 60px;
-    padding: 20px;
-  }
+.footer {
+  min-height: 768px;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.footer_title {
+  font-size: 157px;
+  line-height: 0.83;
+}
 
 }
