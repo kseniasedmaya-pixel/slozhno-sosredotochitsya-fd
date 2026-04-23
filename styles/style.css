@@ -282,6 +282,10 @@
     flex-direction: row;
   }
 
+  .topic_text-container {
+  gap: 20px
+  }
+
   .topic_title {
     width: 236px;
   }
@@ -376,6 +380,10 @@
   .topic.topic-horizontal {
     display: flex;
     flex-direction: row;
+  }
+
+  .topic_text-container {
+    gap: 20px;
   }
   
   .topic_title {
