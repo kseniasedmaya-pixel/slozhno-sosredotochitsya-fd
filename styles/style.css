@@ -169,7 +169,6 @@
   flex-direction: column;
   gap: 10px;
   flex: 1;
-  min-width: 315px;
 }
 
 .title_decor-regular {
@@ -316,10 +315,18 @@
     width: 236px;
   }
 
+   .why_content {
+    max-width: 472px;
+  }
+
+  .how_content {
+    max-width: 472px;
+  }
+
   .topic_gallery {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .gallery {
@@ -427,11 +434,15 @@
 
   .topic_title {
     max-width: 315px;
-    width: 100%;
+
   }
 
   .topic:not(.topic_horizontal) .topic_title {
     width: 315px;
+  }
+
+  .why_content {
+    max-width: 649px;
   }
 
   .what_content {
@@ -440,10 +451,14 @@
     gap: 20px;
   }
 
+  .how_content {
+    max-width: 649px;
+  }
+
   .topic_gallery {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .gallery {
