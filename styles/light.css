@@ -10,32 +10,35 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-image: url(../images/cover-image-light.png);
-  --bg-color: #FFF1F7;
-  --accent-color: #FF8DCB;
-  --font-family-regular: "IBM Plex Mono", monospace;
-  --title-color: #FFC2E6;
+  --bg-color: #fff1f7;
+  --accent-color: #ff8dcb;
+  --title-color: #ffc2e6;
   --title-decor-color: #353430;
-  --title-decor-bg: #FF8DCB;
+  --title-decor-bg: #ff8dcb;
   --topic-title-color: #353430;
   --text-color: #353430;
   --button-color: #353430;
+  --button-hover: rgba(50, 49, 45, 0.4);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-  --bg-image: url(../images/cover-image-light.png);
-  --bg-color: #FFF1F7;
-  --accent-color: #FF8DCB;
-  --font-family-regular: "IBM Plex Mono", monospace;
-  --title-color: #FFC2E6;
-  --title-decor-color: #353430;
-  --title-decor-bg: #FF8DCB;
-  --topic-title-color: #353430;
-  --text-color: #353430;
-  --button-color: #353430;
+    --bg-image: url(../images/cover-image-light.png);
+    --bg-color: #fff1f7;
+    --accent-color: #ff8dcb;
+    --title-color: #ffc2e6;
+    --title-decor-color: #353430;
+    --title-decor-bg: #ff8dcb;
+    --topic-title-color: #353430;
+    --text-color: #353430;
+    --button-color: #353430;
+    --button-hover: rgba(50, 49, 45, 0.4);
+  }
+  .rec-badge {
+    display: none;
   }
 }
 
-.rec-badge {
+:root.theme-light .rec-badge {
   display: none;
 }
